@@ -3,6 +3,7 @@ import baunilha from "@/assets/baunilha.jpg";
 import capimlimao from "@/assets/capimlimao.jpg"
 import pinklemonade from"@/assets/pinklemonade.jpg"
 import lembranca from "@/assets/lembranca.jpg"
+import capimlimaospray from "@/assets/capimlimaospray.jpg"
 
 const products = [
   {
@@ -32,6 +33,13 @@ const products = [
     image: lembranca,
     whatsappMessage: "Olá! Gostaria de solicitar um orçamento!"
   },
+  // {
+  //   name: "Spray de Capim Limão",
+  //   price: 34.90,
+  //   description: "Nossas mini velas são feitas para eternizar momentos especiais. Personalizamos cada detalhe conforme o seu evento, seja casamento, chá ou formatura.",
+  //   image: capimlimaospray,
+  //   whatsappMessage: "Olá! Gostaria de solicitar um orçamento!"
+  // },
 ];
 
 export const Catalog = () => {

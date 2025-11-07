@@ -2,7 +2,7 @@ import aboutImage from "@/assets/sobre-imagem2.jpg";
 
 export const About = () => {
   return (
-    <section className="py-20 md:py-32 px-4 bg-muted/30">
+    <section id="about" className="py-20 md:py-32 px-4 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image */}

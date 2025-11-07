@@ -8,6 +8,11 @@ export const Hero = () => {
     catalog?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToAbout = () => {
+    const about = document.getElementById("about");
+    about?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -31,9 +36,17 @@ export const Hero = () => {
         <Button 
           size="lg"
           onClick={scrollToCatalog}
-          className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-soft hover:shadow-hover transition-smooth"
+          className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-soft hover:shadow-hover transition-smooth mr-2"
         >
           Ver Catálogo
+        </Button>
+
+        <Button 
+          size="lg"
+          onClick={scrollToAbout}
+          className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-soft hover:shadow-hover transition-smooth"
+        >
+          Nossa História
         </Button>
       </div>
 
