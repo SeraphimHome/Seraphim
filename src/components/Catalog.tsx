@@ -1,4 +1,5 @@
 import { ProductCard } from "./ProductCard";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import baunilha from "@/assets/baunilha.jpg";
 import capimlimao from "@/assets/capimlimao.jpg"
 import pinklemonade from"@/assets/pinklemonade.jpg"
@@ -43,10 +44,15 @@ const products = [
 ];
 
 export const Catalog = () => {
+  const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation();
+
   return (
     <section id="catalogo" className="py-20 md:py-32 px-4 bg-background">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 fade-in">
+        <div 
+          ref={titleRef}
+          className={`text-center mb-16 scale-in animate-on-scroll ${titleVisible ? 'visible' : ''}`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Nosso Catálogo
           </h2>
@@ -56,15 +62,21 @@ export const Catalog = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product, index) => (
-            <div 
-              key={product.name} 
-              className="fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <ProductCard {...product} />
-            </div>
-          ))}
+          {products.map((product, index) => {
+            const ProductWrapper = () => {
+              const { elementRef, isVisible } = useScrollAnimation();
+              return (
+                <div 
+                  ref={elementRef}
+                  className={`fade-in animate-on-scroll hover:z-10 relative ${isVisible ? 'visible' : ''}`}
+                  style={{ animationDelay: isVisible ? `${index * 0.1}s` : '0s' }}
+                >
+                  <ProductCard {...product} />
+                </div>
+              );
+            };
+            return <ProductWrapper key={product.name} />;
+          })}
         </div>
       </div>
     </section>

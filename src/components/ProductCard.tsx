@@ -24,19 +24,19 @@ export const ProductCard = ({
   };
 
   return (
-    <Card className="group overflow-hidden border-border/50 shadow-soft hover:shadow-hover transition-smooth bg-card h-[580px] flex flex-col">
-      <div className="aspect-square overflow-hidden">
+    <Card className="group overflow-hidden border-border/50 shadow-soft hover:shadow-hover transition-all duration-500 hover:-translate-y-2 bg-card flex flex-col">
+      <div className="aspect-square overflow-hidden bg-muted">
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
+          className="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-500"
         />
       </div>
       <CardContent className="p-6 flex flex-col flex-grow">
         <h3 className="text-2xl font-semibold text-foreground mb-2">
           {name}
         </h3>
-        <p className="text-muted-foreground mb-4 leading-relaxed line-clamp-4 flex-grow">
+        <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
           {description}
         </p>
         
