@@ -26,33 +26,35 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 py-20 max-w-4xl mx-auto fade-in">
-        <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 tracking-tight">
+      <div className="relative z-10 text-center px-4 py-20 max-w-4xl mx-auto">
+        <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 tracking-tight scale-in">
           Seraphim
         </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 font-light">
+        <p className="text-xl md:text-2xl text-muted-foreground mb-12 font-light fade-in" style={{ animationDelay: '0.2s' }}>
           Velas aromatizadas feitas com carinho e propósito
         </p>
-        <Button 
-          size="lg"
-          onClick={scrollToCatalog}
-          className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-soft hover:shadow-hover transition-smooth mr-2"
-        >
-          Ver Catálogo
-        </Button>
+        <div className="fade-in" style={{ animationDelay: '0.4s' }}>
+          <Button 
+            size="lg"
+            onClick={scrollToCatalog}
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-soft hover:shadow-hover transition-all duration-300 hover:scale-110 mr-2"
+          >
+            Ver Catálogo
+          </Button>
 
-        <Button 
-          size="lg"
-          onClick={scrollToAbout}
-          className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-soft hover:shadow-hover transition-smooth"
-        >
-          Nossa História
-        </Button>
+          <Button 
+            size="lg"
+            onClick={scrollToAbout}
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-soft hover:shadow-hover transition-all duration-300 hover:scale-110"
+          >
+            Nossa História
+          </Button>
+        </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ChevronDown className="w-8 h-8 text-primary" />
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 float">
+        <ChevronDown className="w-8 h-8 text-primary pulse-soft" />
       </div>
     </section>
   );
