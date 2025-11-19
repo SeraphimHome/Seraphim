@@ -36,19 +36,20 @@ export const Hero = () => {
         <div className="fade-in flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md mx-auto sm:max-w-none" style={{ animationDelay: '0.4s' }}>
           <Button 
             size="lg"
+            onClick={scrollToAbout}
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-soft hover:shadow-hover transition-all duration-300 hover:scale-110 w-full sm:w-auto"
+          >
+            Nossa História
+          </Button>
+
+          <Button 
+            size="lg"
             onClick={scrollToCatalog}
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-soft hover:shadow-hover transition-all duration-300 hover:scale-110 w-full sm:w-auto"
           >
             Ver Catálogo
           </Button>
 
-          <Button 
-            size="lg"
-            onClick={scrollToAbout}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-soft hover:shadow-hover transition-all duration-300 hover:scale-110 w-full sm:w-auto"
-          >
-            Nossa História
-          </Button>
         </div>
       </div>
 
