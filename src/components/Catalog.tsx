@@ -9,6 +9,9 @@ import cookie from "@/assets/natal1.jpeg"
 import CipresteEuropeu from "@/assets/natal2.jpeg"
 import CerejaeAvela from "@/assets/natal3.jpeg"
 import NatalFeliz from "@/assets/natal4.jpeg"
+import spraynatal1 from "@/assets/spraynatal1.jpeg"
+import spraynatal2 from "@/assets/spraynatal2.jpeg"
+import spraynatal3 from "@/assets/spraynatal3.jpeg"
 
 const products = [
   {
@@ -73,8 +76,31 @@ const products = [
     image: NatalFeliz,
     whatsappMessage: "Olá! Tenho interesse no Kit Noite Feliz!",
     buttonText: "Quero esse kit"
-  }
-
+  },
+  {
+    name: "Home Spray de Baunilha",
+    price: 34.90,
+    description: "O conforto da baunilha em spray. Cheiro suave, cremoso e relaxante, que combina com qualquer ambiente.",
+    image: spraynatal2,
+    whatsappMessage: "Olá! Tenho interesse no Home Spray de Baunilha!",
+    buttonText: "Quero esse spray"
+  },
+  {
+    name: "Home Spray de Pink Lemonade",
+    price: 34.90,
+    description: "Refrescante, doce e divertida. Cheiro de limonada de frutas vermelhas com um toque floral suave. Perfeita para quem gosta de aromas alegres.",
+    image: spraynatal3,
+    whatsappMessage: "Olá! Tenho interesse no Home Spray de Pink Lemonade!",
+    buttonText: "Quero esse spray"
+  },
+  {
+    name: "Home Spray de Canela & Laranja",
+    price: 34.90,
+    description: "Um equilíbrio entre frescor e aconchego. Cítrico na abertura, quentinho no final. Perfeito para deixar a casa com cheirinho de Natal na hora.",
+    image: spraynatal1,
+    whatsappMessage: "Olá! Tenho interesse no Home Spray de Canela & Laranja!",
+    buttonText: "Quero esse spray"
+  },
 ];
 
 export const Catalog = () => {
