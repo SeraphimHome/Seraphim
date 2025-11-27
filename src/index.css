@@ -248,4 +248,51 @@ All colors MUST be HSL.
       opacity: 0.7;
     }
   }
+  
+  /* Christmas snow animation */
+  @keyframes fall {
+    0% {
+      transform: translateY(-10vh) rotate(0deg);
+    }
+    100% {
+      transform: translateY(110vh) rotate(360deg);
+    }
+  }
+  
+  .animate-fall {
+    animation: fall linear infinite;
+  }
+  
+  /* Santa sleigh animation */
+  @keyframes santaSleigh {
+    0% {
+      transform: translateX(-200px) translateY(0);
+    }
+    50% {
+      transform: translateX(50vw) translateY(-20px);
+    }
+    100% {
+      transform: translateX(calc(100vw + 200px)) translateY(0);
+    }
+  }
+  
+  .animate-santa-sleigh {
+    animation: santaSleigh 20s linear;
+  }
+  
+  /* Christmas lights blinking */
+  @keyframes christmasBlink {
+    0%, 100% {
+      opacity: 1;
+      filter: brightness(1.2);
+    }
+    50% {
+      opacity: 0.4;
+      filter: brightness(0.8);
+    }
+  }
+  
+  .animate-christmas-blink {
+    animation: christmasBlink 1.5s ease-in-out infinite;
+  }
 }

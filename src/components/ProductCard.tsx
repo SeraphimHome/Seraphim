@@ -8,6 +8,7 @@ interface ProductCardProps {
   image: string;
   price?: number;
   whatsappMessage: string;
+  buttonText?: string;
 }
 
 export const ProductCard = ({ 
@@ -15,7 +16,8 @@ export const ProductCard = ({
   description,
   price,
   image, 
-  whatsappMessage 
+  whatsappMessage,
+  buttonText
 }: ProductCardProps) => {
   const handleWhatsAppClick = () => {
     const phone = "5551997418179";
@@ -24,7 +26,7 @@ export const ProductCard = ({
   };
 
   return (
-    <Card className="group overflow-hidden border-border/50 shadow-soft hover:shadow-hover transition-all duration-500 hover:-translate-y-2 bg-card flex flex-col">
+    <Card className="group overflow-hidden border-border/50 shadow-soft hover:shadow-hover transition-all duration-500 hover:-translate-y-2 bg-card flex flex-col h-full">
       <div className="aspect-square overflow-hidden bg-muted">
         <img
           src={image}
@@ -36,7 +38,7 @@ export const ProductCard = ({
         <h3 className="text-2xl font-semibold text-foreground mb-2">
           {name}
         </h3>
-        <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">
+        <p className="text-muted-foreground mb-4 leading-relaxed min-h-[4.5rem]">
           {description}
         </p>
         
@@ -51,7 +53,7 @@ export const ProductCard = ({
           className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full transition-smooth mt-auto"
         >
           <MessageCircle className="w-4 h-4 mr-2" />
-          {price ? "Quero essa vela" : "Fazer orçamento"}
+          {buttonText || (price ? "Quero essa vela" : "Fazer orçamento")}
         </Button>
       </CardContent>
     </Card>
