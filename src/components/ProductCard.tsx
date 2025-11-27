@@ -38,7 +38,7 @@ export const ProductCard = ({
         <h3 className="text-2xl font-semibold text-foreground mb-2">
           {name}
         </h3>
-        <p className="text-muted-foreground mb-4 leading-relaxed min-h-[4.5rem]">
+        <p className="text-muted-foreground mb-4 leading-relaxed min-h-[4.5rem] text-justify">
           {description}
         </p>
         
