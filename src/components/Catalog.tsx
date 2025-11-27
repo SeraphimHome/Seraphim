@@ -5,6 +5,10 @@ import capimlimao from "@/assets/capimlimao.jpg"
 import pinklemonade from"@/assets/pinklemonade.jpg"
 import lembrancinhas from "@/assets/lembrancinhas.jpeg"
 import spraycapimlimao from "@/assets/spraycapimlimao.jpeg"
+import cookie from "@/assets/natal1.jpeg"
+import CipresteEuropeu from "@/assets/natal2.jpeg"
+import CerejaeAvela from "@/assets/natal3.jpeg"
+import NatalFeliz from "@/assets/natal4.jpeg"
 
 const products = [
   {
@@ -41,6 +45,36 @@ const products = [
   //   image: spraycapimlimao,
   //   whatsappMessage: "Olá! Gostaria de solicitar um orçamento!"
   // },
+  {
+    name: "Cookies de Natal",
+    price: 50,
+    description: "Cheiro de cookies quentinhos saindo do forno. Doce, confortável e cheio de clima natalino, perfeito para deixar a casa acolhedora.",
+    image: cookie,
+    whatsappMessage: "Olá! Tenho interesse nos Cookies de Natal!"
+  },
+  {
+    name: "Cipreste Europeu",
+    price: 50,
+    description: "Aroma fresco e elegante de floresta. Une o verde do cipreste com o amadeirado do pinho e um fundo suave de baunilha, um clássico de Natal.",
+    image: CipresteEuropeu,
+    whatsappMessage: "Olá! Tenho interesse no Cipreste Europeu!"
+  },
+  {
+    name: "Cereja e Avelã",
+    price: 50,
+    description: "Doce e sofisticada. Mistura cereja com notas cremosas e um fundo quentinho de avelã. Perfeita para quem ama aromas suaves e marcantes.",
+    image: CerejaeAvela,
+    whatsappMessage: "Olá! Tenho interesse na Cereja e Avelã!"
+  },
+  {
+    name: "Kit Noite Feliz",
+    price: 139.90,
+    description: "O Kit Noite Feliz reúne os nossos quatro aromas especiais de Natal: Baunilha, Cipreste Europeu, Cookies de Natal e Cereja & Avelã. Um presente sofisticado para pessoas especiais, com fragrâncias que perfumam, acolhem e transformam o ambiente. Um kit completo para criar momentos inesquecíveis.",
+    image: NatalFeliz,
+    whatsappMessage: "Olá! Tenho interesse no Kit Noite Feliz!",
+    buttonText: "Quero esse kit"
+  }
+
 ];
 
 export const Catalog = () => {
