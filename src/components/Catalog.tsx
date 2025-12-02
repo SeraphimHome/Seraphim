@@ -12,6 +12,7 @@ import NatalFeliz from "@/assets/natal4.jpeg"
 import spraynatal1 from "@/assets/spraynatal1.jpeg"
 import spraynatal2 from "@/assets/spraynatal2.jpeg"
 import spraynatal3 from "@/assets/spraynatal3.jpeg"
+import renas from "@/assets/renas.jpeg"
 
 const products = [
   {
@@ -100,6 +101,14 @@ const products = [
     image: spraynatal1,
     whatsappMessage: "Olá! Tenho interesse no Home Spray de Canela & Laranja!",
     buttonText: "Quero esse spray"
+  },
+    {
+    name: "Rena de Natal",
+    price: 19.90,
+    description: "om aroma de baunilha, as renas são a decoração perfeita para trazer aconchego e charme para a sua casa neste fim de ano!",
+    image: renas,
+    whatsappMessage: "Olá! Tenho interesse na Rena",
+    buttonText: "Quero essa rena!"
   },
 ];
 
