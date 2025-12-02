@@ -13,6 +13,7 @@ import spraynatal1 from "@/assets/spraynatal1.jpeg"
 import spraynatal2 from "@/assets/spraynatal2.jpeg"
 import spraynatal3 from "@/assets/spraynatal3.jpeg"
 import renas from "@/assets/renas.jpeg"
+import renas2 from "@/assets/renas2.jpeg"
 
 const products = [
   {
@@ -106,7 +107,7 @@ const products = [
     name: "Rena de Natal",
     price: 19.90,
     description: "Com aroma de baunilha, as renas são a decoração perfeita para trazer aconchego e charme para a sua casa neste fim de ano!",
-    image: renas,
+    image: [renas, renas2],
     whatsappMessage: "Olá! Tenho interesse na Rena",
     buttonText: "Quero essa rena!"
   },
