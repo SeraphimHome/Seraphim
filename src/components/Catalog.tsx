@@ -14,6 +14,15 @@ import spraynatal2 from "@/assets/spraynatal2.jpeg"
 import spraynatal3 from "@/assets/spraynatal3.jpeg"
 import renas from "@/assets/renas.jpeg"
 import renas2 from "@/assets/renas2.jpeg"
+import lembrancinhas2 from "@/assets/lembrancinhas2.jpeg"
+import latanoel1 from "@/assets/latanoel1.jpeg"
+import latanoel2 from "@/assets/latanoel2.jpeg"
+import latabiscoito1 from "@/assets/latabiscoito1.jpeg"
+import latabiscoito2 from "@/assets/latabiscoito2.jpeg"
+import latarena1 from "@/assets/latarena1.jpeg"
+import latarena2 from "@/assets/latarena2.jpeg"
+import latapreta1 from "@/assets/latapreta1.jpeg"
+import latapreta2 from "@/assets/latapreta2.jpeg"
 
 const products = [
   {
@@ -40,7 +49,7 @@ const products = [
   {
     name: "Lembrancinhas",
     description: "Nossas mini velas são feitas para eternizar momentos especiais. Personalizamos cada detalhe conforme o seu evento, seja casamento, chá ou formatura.",
-    image: lembrancinhas,
+    image: [ lembrancinhas2, lembrancinhas ],
     whatsappMessage: "Olá! Gostaria de solicitar um orçamento!"
   },
   // {
@@ -103,13 +112,45 @@ const products = [
     whatsappMessage: "Olá! Tenho interesse no Home Spray de Canela & Laranja!",
     buttonText: "Quero esse spray"
   },
-    {
+  {
     name: "Rena de Natal",
     price: 19.90,
     description: "Com aroma de baunilha, as renas são a decoração perfeita para trazer aconchego e charme para a sua casa neste fim de ano!",
     image: [renas, renas2],
     whatsappMessage: "Olá! Tenho interesse na Rena",
     buttonText: "Quero essa rena!"
+  },
+  {
+    name: "Vela Noite Feliz (80g)",
+    price: 35,
+    description: "O presente ideal para expressar gratidão, carinho ou para quem deseja levar a essência da Seraphim para todos os lugares. Aroma: Cereja & Avelã.",
+    image: [latanoel1, latanoel2],
+    whatsappMessage: "Olá! Tenho interesse na Rena",
+    buttonText: "Quero essa vela!"
+  },
+  {
+    name: "Vela Noite Feliz (80g)",
+    price: 35,
+    description: "O presente ideal para expressar gratidão, carinho ou para quem deseja levar a essência da Seraphim para todos os lugares. Aroma: Cookies de Natal.",
+    image: [latabiscoito1, latabiscoito2],
+    whatsappMessage: "Olá! Tenho interesse na Rena",
+    buttonText: "Quero essa vela!"
+  },
+  {
+    name: "Vela Noite Feliz (80g)",
+    price: 35,
+    description: "O presente ideal para expressar gratidão, carinho ou para quem deseja levar a essência da Seraphim para todos os lugares. Aroma: Baunilha.",
+    image: [latarena1, latarena2],
+    whatsappMessage: "Olá! Tenho interesse na Rena",
+    buttonText: "Quero essa vela!"
+  },
+  {
+    name: "Vela Noite Feliz (80g)",
+    price: 35,
+    description: "O presente ideal para expressar gratidão, carinho ou para quem deseja levar a essência da Seraphim para todos os lugares. Aroma: Cipreste Europeu.",
+    image: [latapreta1, latapreta2],
+    whatsappMessage: "Olá! Tenho interesse na Rena",
+    buttonText: "Quero essa vela!"
   },
 ];
 
