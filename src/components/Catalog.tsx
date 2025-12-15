@@ -114,7 +114,7 @@ const products = [
   },
   {
     name: "Rena de Natal",
-    price: 19.90,
+    price: 12.90,
     description: "Com aroma de baunilha, as renas são a decoração perfeita para trazer aconchego e charme para a sua casa neste fim de ano!",
     image: [renas, renas2],
     whatsappMessage: "Olá! Tenho interesse na Rena",
