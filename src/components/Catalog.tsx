@@ -1,6 +1,6 @@
 import { ProductCard } from "./ProductCard";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-import baunilha from "@/assets/baunilha.jpg";
+import baunilha from "@/assets/baunilha.jpeg";
 import capimlimao from "@/assets/capimlimao.jpg"
 import pinklemonade from"@/assets/pinklemonade.jpg"
 import lembrancinhas from "@/assets/lembrancinhas.jpeg"
