@@ -172,7 +172,7 @@ const products = [
   {
     name: "Combo Blind Date",
     price: 54.90,
-    description: "Home Spray e Vela de sua preferência",
+    description: "No nosso Blind Date, a surpresa é por nossa conta. Neste combo, a escolha é sua: você decide os aromas da vela e do home spray.",
     image: kit1,
     whatsappMessage: "Olá! Tenho interesse no Combo Blind Date!",
     buttonText: "Quero esse kit",
