@@ -248,5 +248,19 @@ All colors MUST be HSL.
       opacity: 0.7;
     }
   }
+
+  /* WhatsApp pulse animation */
+  @keyframes pulseWhatsApp {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+  }
+  
+  .pulse-whatsapp {
+    animation: pulseWhatsApp 2s ease-in-out infinite;
+  }
   
 }
