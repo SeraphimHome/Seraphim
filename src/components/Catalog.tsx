@@ -5,22 +5,9 @@ import baunilha from "@/assets/baunilha.jpeg";
 import capimlimao from "@/assets/capimlimao.jpg"
 import pinklemonade from"@/assets/pinklemonade.jpg"
 import lembrancinhas from "@/assets/lembrancinhas.jpeg"
-import cookie from "@/assets/natal1.jpeg"
-import CipresteEuropeu from "@/assets/natal2.jpeg"
-import CerejaeAvela from "@/assets/natal3.jpeg"
-import spraynatal1 from "@/assets/spraynatal1.jpeg"
-import spraynatal2 from "@/assets/spraynatal2.jpeg"
-import spraynatal3 from "@/assets/spraynatal3.jpeg"
 import lembrancinhas2 from "@/assets/lembrancinhas2.jpeg"
-import latanoel1 from "@/assets/latanoel1.jpeg"
-import latanoel2 from "@/assets/latanoel2.jpeg"
-import latabiscoito1 from "@/assets/latabiscoito1.jpeg"
-import latabiscoito2 from "@/assets/latabiscoito2.jpeg"
-import latarena1 from "@/assets/latarena1.jpeg"
-import latarena2 from "@/assets/latarena2.jpeg"
-import latapreta1 from "@/assets/latapreta1.jpeg"
-import latapreta2 from "@/assets/latapreta2.jpeg"
-import kit1 from "@/assets/kit1.jpeg"
+import sprayCapimLimao from "@/assets/spray_capim_limao.jpeg"
+import sprayCerejaAvela from "@/assets/spray_cereja_avela.jpeg"
 
 const products = [
   {
@@ -63,121 +50,26 @@ const products = [
     badge: { text: "Sob Encomenda", color: "purple" }
   },
   {
-    name: "Cookies de Natal",
+    name: "Home Spray de Capim Limão",
     price: 34.90,
-    description: "Cheiro de cookies quentinhos saindo do forno. Doce, confortável e cheio de clima natalino, perfeito para deixar a casa acolhedora.",
-    image: cookie,
-    whatsappMessage: "Olá! Tenho interesse nos Cookies de Natal!",
-    category: "natal",
-    specs: { size: "100g", burnTime: "~12h", wax: "Cera de coco" },
-    badge: { text: "Blind Date", color: "red" }
-  },
-  {
-    name: "Cipreste Europeu",
-    price: 34.90,
-    description: "Aroma fresco e elegante de floresta. Une o verde do cipreste com o amadeirado do pinho e um fundo suave de baunilha, um clássico de Natal.",
-    image: CipresteEuropeu,
-    whatsappMessage: "Olá! Tenho interesse no Cipreste Europeu!",
-    category: "natal",
-    specs: { size: "100g", burnTime: "~12h", wax: "Cera de coco" },
-    badge: { text: "Blind Date", color: "red" }
-  },
-  {
-    name: "Cereja e Avelã",
-    price: 34.90,
-    description: "Doce e sofisticada. Mistura cereja com notas cremosas e um fundo quentinho de avelã. Perfeita para quem ama aromas suaves e marcantes.",
-    image: CerejaeAvela,
-    whatsappMessage: "Olá! Tenho interesse na Cereja e Avelã!",
-    category: "natal",
-    specs: { size: "100g", burnTime: "~12h", wax: "Cera de coco" },
-    badge: { text: "Blind Date", color: "red" }
-  },
-  {
-    name: "Home Spray de Baunilha",
-    price: 24.90,
-    description: "O conforto da baunilha em spray. Cheiro suave, cremoso e relaxante, que combina com qualquer ambiente.",
-    image: spraynatal2,
-    whatsappMessage: "Olá! Tenho interesse no Home Spray de Baunilha!",
+    description: "Capim limão é um aroma que transmite frescor imediato e sensação de limpeza. Possui notas cítricas verdes, levemente herbais, com um toque suave e energizante.",
+    image: sprayCapimLimao,
+    whatsappMessage: "Olá! Tenho interesse no Home Spray de Capim Limão!",
     buttonText: "Quero esse spray",
     category: "sprays",
     specs: { size: "200ml", formula: "Base alcoólica de alta pureza" },
-    badge: { text: "Blind Date", color: "red" }
+    badge: null
   },
   {
-    name: "Home Spray de Pink Lemonade",
-    price: 24.90,
-    description: "Refrescante, doce e divertida. Cheiro de limonada de frutas vermelhas com um toque floral suave. Perfeita para quem gosta de aromas alegres.",
-    image: spraynatal3,
-    whatsappMessage: "Olá! Tenho interesse no Home Spray de Pink Lemonade!",
+    name: "Home Spray de Cereja & Avelã",
+    price: 34.90,
+    description: "Frutado, adocicado e suavemente cremoso. Uma combinação elegante que une a doçura da cereja às notas quentes da avelã, trazendo conforto e personalidade ao ambiente.",
+    image: sprayCerejaAvela,
+    whatsappMessage: "Olá! Tenho interesse no Home Spray de Cereja & Avelã!",
     buttonText: "Quero esse spray",
     category: "sprays",
     specs: { size: "200ml", formula: "Base alcoólica de alta pureza" },
-    badge: { text: "Blind Date", color: "red" }
-  },
-  {
-    name: "Home Spray de Canela & Laranja",
-    price: 24.90,
-    description: "Um equilíbrio entre frescor e aconchego. Cítrico na abertura, quentinho no final. Perfeito para deixar a casa com cheirinho de Natal na hora.",
-    image: spraynatal1,
-    whatsappMessage: "Olá! Tenho interesse no Home Spray de Canela & Laranja!",
-    buttonText: "Quero esse spray",
-    category: "sprays",
-    specs: { size: "200ml", formula: "Base alcoólica de alta pureza" },
-    badge: { text: "Blind Date", color: "red" }
-  },
-  {
-    name: "Vela em Lata - Cereja & Avelã",
-    price: 24.90,
-    description: "O presente ideal para expressar gratidão, carinho ou para quem deseja levar a essência da Seraphim para todos os lugares. Aroma: Cereja & Avelã.",
-    image: [latanoel1, latanoel2],
-    whatsappMessage: "Olá! Tenho interesse na Vela Noite Feliz - Cereja & Avelã!",
-    buttonText: "Quero essa vela!",
-    category: "natal",
-    specs: { size: "80g", burnTime: "~8h", wax: "Cera de coco" },
-    badge: { text: "Blind Date", color: "red" }
-  },
-  {
-    name: "Vela em Lata - Cookies de Natal",
-    price: 24.90,
-    description: "O presente ideal para expressar gratidão, carinho ou para quem deseja levar a essência da Seraphim para todos os lugares. Aroma: Cookies de Natal.",
-    image: [latabiscoito1, latabiscoito2],
-    whatsappMessage: "Olá! Tenho interesse na Vela Noite Feliz - Cookies!",
-    buttonText: "Quero essa vela!",
-    category: "natal",
-    specs: { size: "80g", burnTime: "~8h", wax: "Cera de coco" },
-    badge: { text: "Blind Date", color: "red" }
-  },
-  {
-    name: "Vela em Lata - Baunilha",
-    price: 24.90,
-    description: "O presente ideal para expressar gratidão, carinho ou para quem deseja levar a essência da Seraphim para todos os lugares. Aroma: Baunilha.",
-    image: [latarena1, latarena2],
-    whatsappMessage: "Olá! Tenho interesse na Vela Noite Feliz - Baunilha!",
-    buttonText: "Quero essa vela!",
-    category: "natal",
-    specs: { size: "80g", burnTime: "~8h", wax: "Cera de coco" },
-    badge: { text: "Blind Date", color: "red" }
-  },
-  {
-    name: "Vela em Lata - Cipreste Europeu",
-    price: 24.90,
-    description: "O presente ideal para expressar gratidão, carinho ou para quem deseja levar a essência da Seraphim para todos os lugares. Aroma: Cipreste Europeu.",
-    image: [latapreta1, latapreta2],
-    whatsappMessage: "Olá! Tenho interesse na Vela Noite Feliz - Cipreste Europeu!",
-    buttonText: "Quero essa vela!",
-    category: "natal",
-    specs: { size: "80g", burnTime: "~8h", wax: "Cera de coco" },
-    badge: { text: "Blind Date", color: "red" }
-  },
-  {
-    name: "Combo Blind Date",
-    price: 54.90,
-    description: "No nosso Blind Date, a surpresa é por nossa conta. Neste combo, a escolha é sua: você decide os aromas da vela e do home spray.",
-    image: kit1,
-    whatsappMessage: "Olá! Tenho interesse no Combo Blind Date!",
-    buttonText: "Quero esse kit",
-    category: "presentes",
-    badge: { text: "Blind Date", color: "red" }
+    badge: null
   }
 ];
 
@@ -188,16 +80,13 @@ export const Catalog = () => {
   const categories = [
     { id: "todas", label: "Todas", icon: "✨" },
     { id: "velas", label: "Velas Clássicas", icon: "🕯️" },
-    { id: "blinddate", label: "Blind Date", icon: "🥳" },
     { id: "sprays", label: "Home Sprays", icon: "💨" },
     { id: "presentes", label: "Kits & Presentes", icon: "🎁" },
   ];
 
   const filteredProducts = activeCategory === "todas" 
     ? products 
-    : activeCategory === "blinddate"
-      ? products.filter(p => p.badge?.text === "Blind Date")
-      : products.filter(p => p.category === activeCategory);
+    : products.filter(p => p.category === activeCategory);
 
   return (
     <section id="catalogo" className="py-20 md:py-32 px-4 bg-background">
