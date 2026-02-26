@@ -8,6 +8,7 @@ import lembrancinhas from "@/assets/lembrancinhas.jpeg"
 import lembrancinhas2 from "@/assets/lembrancinhas2.jpeg"
 import sprayCapimLimao from "@/assets/spray_capim_limao.jpeg"
 import sprayCerejaAvela from "@/assets/spray_cereja_avela.jpeg"
+import velaAlva from "@/assets/vela_alva.jpeg"
 
 const products = [
   {
@@ -41,6 +42,16 @@ const products = [
     badge: null
   },
   {
+    name: "Vela aromatizada decorativa - Alva",
+    price: 64.90,
+    description: "Minimalista, elegante e pensada para elevar a decoração com sutileza.",
+    image: velaAlva,
+    whatsappMessage: "Olá! Tenho interesse na vela Alva!",
+    category: "velas",
+    specs: { size: "210g", wax: "Cera de coco" },
+    badge: null
+  },
+  {
     name: "Lembrancinhas Personalizadas",
     description: "Nossas mini velas são feitas para eternizar momentos especiais. Personalizamos cada detalhe conforme o seu evento, seja casamento, chá ou formatura.",
     image: [ lembrancinhas2, lembrancinhas ],
@@ -70,7 +81,7 @@ const products = [
     category: "sprays",
     specs: { size: "200ml", formula: "Base alcoólica de alta pureza" },
     badge: null
-  }
+  },
 ];
 
 export const Catalog = () => {
